@@ -1,0 +1,133 @@
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff17e4;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: 'Oxygen Mono', monospace;
+  --sans: 'Oxygen', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--black);
+  font-family: var(--sans);
+  color: var(--white);
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--magenta);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hotmag);
+}
+
+#projects {
+  padding: 4rem 1rem;
+  width: 100%;
+  max-width: 800px;
+  padding: 4rem 1rem;
+}
+
+#projects h2 {
+  font-family: var(--mono);
+  color: var(--aqua);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#projects h4 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.project {
+  background-color: var(--dkblue);
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.project-link {
+  display: inline-block;
+  background-color: var(--plum);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+  background-color: var(--hotmag);
+  color: var(--black);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--plum);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--hotmag);
+  color: var(--black);
+}
